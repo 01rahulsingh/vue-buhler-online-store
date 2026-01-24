@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Basket + handle on RIGHT -->
+  <path
+    d="M21.5 4H18.8L17.6 13.8H4.8L3.4 7.2H17"
+    stroke="#009B91"
+    stroke-width="1.2"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+
+  <!-- Basket bottom line -->
+  <path
+    d="M4.8 13.8H17.6"
+    stroke="#009B91"
+    stroke-width="1.2"
+    stroke-linecap="round"/>
+
+  <!-- Wheels -->
+  <circle
+    cx="7"
+    cy="18"
+    r="1"
+    fill="#009B91"/>
+
+  <circle
+    cx="15"
+    cy="18"
+    r="1"
+    fill="#009B91"/>
+
+</svg>
