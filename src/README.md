@@ -45,5 +45,5 @@ The implementation focuses on clean architecture, maintainability, and a polishe
 ### 1. Clone the repository
 
 ```bash
-git clone <https://github.com/01rahulsingh/vue-buhler-online-store.git>
+git clone https://github.com/01rahulsingh/vue-buhler-online-store.git
 cd vue-buhler-online-store
