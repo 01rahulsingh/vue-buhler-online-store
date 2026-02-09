@@ -49,11 +49,30 @@ export default new Vuex.Store({
 
   mutations: {
     ADD_TO_CART(state, product) {
-      state.cart.push(product)
+      const existingProduct = state.cart.find(cartProduct => cartProduct.id === product.id);
+
+      if(existingProduct){
+        existingProduct.quantity++;
+      }
+      else {
+        state.cart.push(product);
+      }
     },
 
-    REMOVE_FROM_CART(state, index) {
-      state.cart.splice(index, 1)
+    REMOVE_FROM_CART(state, id) {
+      const existingProduct = state.cart.find(cartProduct => cartProduct.id === id);
+
+      if(!existingProduct) {
+        return;
+      }
+
+      if(existingProduct.quantity > 1) {
+        existingProduct.quantity--;
+      } else {
+
+        const removedProduct = state.cart.filter(cartProduct => cartProduct.id === id)
+        state.cart.splice(removedProduct, 1);
+      }
     }
   }
 })

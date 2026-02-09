@@ -31,6 +31,7 @@ export default {
         type: this.product.categoryLabel,
         price: this.product.price,
         image: this.product.image,
+        quantity: 1,
       });
     },
     viewProductDetails() {

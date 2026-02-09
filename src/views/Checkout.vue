@@ -12,11 +12,12 @@
       <div class="product-info">
         <div class="product-name">{{ product.name }}</div>
         <div class="product-type">{{ product.type }}</div>
+        <div class="product-qty">Quanity {{ product.quantity }}</div>
       </div>
 
       <div class="product-price">x{{ product.price }}</div>
 
-      <button class="product-remove" @click="removeProduct(index)">
+      <button class="product-remove" @click="removeProduct(product.id)">
         ✕
       </button>
     </div>
@@ -41,8 +42,8 @@ export default {
   },
 
   methods: {
-    removeProduct(index) {
-      this.$store.commit('REMOVE_FROM_CART', index)
+    removeProduct(id) {
+      this.$store.commit('REMOVE_FROM_CART', id)
     }
   }
 }
